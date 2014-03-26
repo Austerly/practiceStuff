@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265.19">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;title&gt;</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>var user = prompt("You were late to school today.<span class="Apple-converted-space">  </span>As you're in sight of your school, you see ninjas taking it over.<span class="Apple-converted-space">  </span>Do you ATTACK the ninjas head-on, try to SNEAK inside the school, or RUN to the wharf to convince some pirates to help you free the school?", "Type ATTACK, SNEAK, or RUN to indicate your choice.").toLowerCase();</p>
+<p class="p2"><br></p>
+<p class="p1">switch(user) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>case 'attack':</p>
+<p class="p1"><span class="Apple-converted-space">        </span>confirm("Oh, no!<span class="Apple-converted-space">  </span>I'm not sure that was a great idea to attack the ninjas like that.<span class="Apple-converted-space">  </span>They see you coming, and are prepared for your arrival.<span class="Apple-converted-space">  </span>They defeat you easily.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>break;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>case 'sneak':</p>
+<p class="p1"><span class="Apple-converted-space">        </span>sneak = prompt("You manage to do the unthinkable: outsneak a ninja! You make it into the school. Do you RALLY the students to take back the school, or try to stealthily ELIMINATE the ninjas yourself, one by one?", "Type RALLY, or ELIMINATE to indicate your choice.").toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (sneak === "rally" &amp;&amp; sneak != "eliminate") {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confirm("Well done! The ninjas could not stand against the legions of students attending your overly crowded school. You have defeated them.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confirm("Your luck ran out, the ninjas spot you and lock you up in the girl's bathroom, from whence there is no escape. Without you in their way, the ninjas take over the world.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>break;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>case 'run':</p>
+<p class="p1"><span class="Apple-converted-space">        </span>pirate = prompt("You run to the wharf to convince some pirates to help you retake the school. At first they were more interested in continuing their search for buried treasure, but once they heard that ninjas were involved, they agree whole heartedly to help your cause. They request that you PROMISE them all the maps in the geography department to help them with their search of buried treasure.<span class="Apple-converted-space">  </span>They also want to KEEP any treasure that they find at the school. Do you YIELD to both of their demands, or HOLD your ground, refusing to compromise?", "Type PROMISE, KEEP, YIELD or HOLD to indicate your choice.").toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (pirate === "keep" || pirate === "yield") {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confirm("The pirates see that you're someone that they can work with. They follow you to the school, where they assist in liberating the school.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>else if (pirate === "hold" || pirate === "promise") {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confirm("The pirates see in you the makings of a tough captain. They follow you to the school, and help you liberate the school from the ninjas. Afterwards, they convince you to sail off with them in search of buried treasure. You take the geography maps from the school to aid you in your search.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (pirate === "keep" || pirate === "yield") {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confirm("After the ninjas are defeated, it becomes clear that the pirates view the Geology department's collection of priceless geological artifacts 'buried treasure'. They start to loot the collection, but then get out of hand. The school and its students might be safe, but there isn't anything left in side the school! The pirates took it all.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>break;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>default:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>confirm("due to your indecision, the world was overcome by ninjas. Great.");</p>
+<p class="p1">}</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
